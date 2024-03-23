@@ -1,0 +1,15 @@
+rest:
+  default:
+    baseurl: https://radical.sh/api/
+    timeout: 45000
+authentication:
+  enabled: ${AUTHENTICATION_ENABLED:true}
+  basic:
+    username: tQYaxt7D5g
+    pass: F3WpAJE*5i
+app:
+  port: 4000
+db:
+  mongo:
+    database: hellonestauth
+    host: localhost

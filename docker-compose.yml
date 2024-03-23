@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  mongo:
+    image: mongo
+    container_name: mongo-hellonestauth
+    ports:
+      - 27017:27017
