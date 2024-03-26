@@ -64,16 +64,18 @@ export class PersonController {
 		@ContextDecor() context: Context,
 		@Res() response: Response
 	) {
-		this.logger.log(`Received a new create request `)
+		this.logger.log(`Received a new create request controller`)
 		const personId = v4()
 		const created = await this.personService.create(
 			personId,
 			createPersonInput,
 			context
 		)
+		console.log(created)
 		response.setHeader('Location', '/v1/persons/' + personId)
 		response.json(created)
 		this.logger.log(`Create request for Person ${personId} is complete`)
+		this.logger.log(`beforeeee`)
 		return response
 	}
 

@@ -37,7 +37,6 @@ export class AuthGuard implements CanActivate {
 		const userName = this.configService.get('authentication.basic.username')
 		const pass = this.configService.get('authentication.basic.pass')
 		try {
-			console.log(request.headers)
 			const basicAuthToken = request.headers['authorization'] as string
 			if (!basicAuthToken.startsWith('Basic')) {
 				throw new UnauthorizedException()

@@ -9,6 +9,7 @@ import { Context } from '../entities/context'
 import { Param } from '@nestjs/common'
 import { PersonService } from '../services/person.service'
 import { Logger } from '@nestjs/common'
+import { Args } from '@nestjs/graphql'
 @Controller('/v1/')
 export class PersonQueryController {
 	readonly logger: Logger = new Logger(this.constructor.name)

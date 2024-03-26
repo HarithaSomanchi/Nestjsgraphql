@@ -26,7 +26,9 @@ import { GraphQLModule } from '@nestjs/graphql'
 		RepositoryUtils,
 		PersonService,
 		PersonRepository,
-		PersonResolver
+		PersonController,
+		PersonResolver,
+		PersonQueryController
 	],
 	imports: [
 		HttpModule,
